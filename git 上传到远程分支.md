@@ -36,3 +36,6 @@ Permission denied: user=dr.who, access=WRITE, inode="/user/spark/DATA/LOAD":root
 给用户赋权：sudo -u hdfs hadoop fs -chown root /user/spark/DATA/LOAD
 删除文件（夹）：hadoop fs -rm（r） /user/spark/DATA/LOAD/h
 
+5.在其他主机上使用git时，可以设置ssh，生成公秘钥，然后再gitpush。若未设置ssh，可直接使用http方式，输入相应的用户名和密码。出错的话可以先删掉 当前的.git文件 
+rm -rf ./.git
+再重新git init
